@@ -1,0 +1,76 @@
+:root {
+    --myGreen: rgb(44, 150, 120);
+    --myBlack: rgb(41, 44, 46);
+    --myWhite: rgb(239, 239, 239);
+}
+body {
+    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--myBlack);
+}
+
+/* header */
+header {
+    margin: 0;
+    display: flex;
+    background-color: var(--myGreen);
+    color: var(--myWhite);
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: var(--myBlack);
+    padding-left: 1em;
+}
+
+/* message list */
+.message-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--myBlack);
+    margin: 0;
+    padding: 0;
+}
+
+.message-item {
+    padding-left: 4em;
+    width: 100%;
+    margin: 0;
+    box-shadow: rgba(44, 150, 120, 0.18) 0px 2px 4px;
+}
+
+.message-author {
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.message-author span:first-child {
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+
+/* new */
+form {
+    margin-left: 1em;
+}
+form input {
+    margin-bottom: 1em;
+    line-height: 1.8em;
+}
+.form-button {
+    background: var(--myGreen);
+    color: var(--myWhite);
+    border-radius: 0.25em;
+    border: none;
+    box-shadow: rgba(44, 150, 120, 0.18) 0px 2px 4px;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<ul class="message-list">
+    <% for(let i = messages.length - 1; i >= 0; i--) {%>
+    <li class="message-item">
+        <p><%= messages[i].text %></p>
+        <p class="message-author">
+            <span> <%= messages[i].user %></span>
+            <span> <%= messages[i].added.toLocaleTimeString() %></span>
+        </p>
+    </li>
+    <% } %>
+</ul>

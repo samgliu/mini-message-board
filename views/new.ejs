@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head'); %>
+    </head>
+    <body class="container">
+        <header><%- include('./partials/header'); %></header>
+        <a href="/">back</a>
+        <form method="POST" action="/new">
+            <h1>New Message</h1>
+            <label for="message">Message:</label><br />
+            <input type="text" id="message" name="message" /><br />
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" /><br />
+            <input class="form-button" type="submit" value="Submit" />
+        </form>
+
+        <footer><%- include('./partials/footer'); %></footer>
+    </body>
+</html>
